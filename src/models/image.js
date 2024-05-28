@@ -1,8 +1,15 @@
 // models/image.js
 const mongoose = require('mongoose');
+const { Schema, model } = mongoose;
+const { ObjectId } = Schema.Types;
+
 const imageSchema = new mongoose.Schema({
+  title: String,
   url: String,
   description: String,
-  tags: [String]
 });
-module.exports = mongoose.model('Image', imageSchema);
+
+
+const Image = model('Image', imageSchema);
+
+module.exports = Image;
