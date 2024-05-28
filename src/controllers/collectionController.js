@@ -1,5 +1,5 @@
 // controllers/collectionController.js
-const Collection = require('../models/collection');
+const Collection = require('../src/models/collection');
 exports.getAllCollections = async (req, res) => {
   try {
     const collections = await Collection.find().populate('images');

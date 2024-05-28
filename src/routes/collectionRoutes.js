@@ -1,7 +1,7 @@
 // routes/collectionRoutes.js
 const express = require('express');
 const router = express.Router();
-const collectionController = require('../controllers/collectionController');
+const collectionController = require('../src/controllers/collectionController');
 
 router.get('/', collectionController.getAllCollections);
 // Otras rutas CRUD...

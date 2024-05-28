@@ -1,5 +1,5 @@
 // controllers/imageController.js
-const Image = require('../models/image');
+const Image = require('../src/models/image');
 exports.getAllImages = async (req, res) => {
   try {
     const images = await Image.find();
